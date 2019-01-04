@@ -18,6 +18,14 @@ export class ImgCardComponent implements OnInit {
   ngOnInit() {
   }
 
+  private image: CatImage = {
+    message: 'Progressive Web Cat',
+    api: 'https://cataas.com/cat/says/',
+    fontsize: 40
+  };
+  
+  public src: string;
+
   ngOnInit() {
     this.generateSrc();
   }
